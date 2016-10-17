@@ -1,0 +1,13 @@
+aniso8601==1.1.0
+click==6.6
+Flask==0.11.1
+Flask-RESTful==0.3.5
+itsdangerous==0.24
+Jinja2==2.8
+MarkupSafe==0.23
+python-dateutil==2.5.3
+python-engineio==1.0.3
+python-socketio==1.6.0
+pytz==2016.7
+six==1.10.0
+Werkzeug==0.11.11
