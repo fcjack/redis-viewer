@@ -1,7 +1,9 @@
 from flask import Flask
+from socketio import Server
 from flask_restful import Api
 
 app = Flask("REDIS_VIEWER", static_folder='static', static_url_path='')
+sio = Server()
 _api = Api(app)
 
 
