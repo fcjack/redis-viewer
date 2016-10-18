@@ -1,12 +1,11 @@
-from flask_restful import Resource, Api, abort, request, reqparse
-from core.server import register
-from models.RedisKey import RedisKey
-from flask import Flask, jsonify
-from redis import StrictRedis
 import json
 
-app = Flask(__name__)
-api = Api(app)
+from flask import jsonify
+from flask_restful import Resource, abort, request, reqparse
+from redis import StrictRedis
+
+from core.server import register
+from models.RedisKey import RedisKey
 
 parser = reqparse.RequestParser()
 parser.add_argument('key', type=str, help='Key to set in Redis')
