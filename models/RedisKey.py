@@ -3,10 +3,6 @@ class RedisKey:
         self.key = key
         self.key_type = key_type
         self.value = value
-        pass
-
-    def __del__(self):
-        pass
 
     def serialize(self):
         return {
