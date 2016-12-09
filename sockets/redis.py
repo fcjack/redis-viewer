@@ -1,5 +1,6 @@
 from core.server import sio
 
+
 @sio.on('connect', namespace='/redis')
 def main_chanel(sid, environ):
     print("connected: ", sid)

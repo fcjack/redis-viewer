@@ -4,10 +4,10 @@ from flask_restful import Api
 
 app = Flask("REDIS_VIEWER", static_folder='static', static_url_path='')
 sio = Server()
-_api = Api(app)
+_api = Api(app, prefix='/redis/api')
 
 
-@app.route("/")
+@app.route("/redis")
 def _provide_static():
     return app.send_static_file('index.html')
 
